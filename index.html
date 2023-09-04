@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dan's website</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Aarya's Website" />
+        <meta
+            name="keywords"
+            content="Aarya, gd3kr, ULTRA SUPER 100X MEGAMIND"
+        />
+        <meta name="author" content="Aarya" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="icon" href="favicon.ico" />
+    </head>
+    <body>
+        <!-- image that stays in the background with opacity 0.5 -->
+        <img src="light.png" alt="background-image" class="bg-image" />
+        <!-- <div class="bg-image> -->
+        <div class="main bleeding">
+            <div
+                style="
+                    display: flex;
+                    width: 100%;
+                    gap: 0.4rem;
+                    align-items: center;
+                "
+            >
+                <h1 class="title">Dan's Website</h1>
+                <img src="pfp.jpg" height="33px" width="33px" class="glider" />
+            </div>
+            <!--add an image-->
+
+            <div
+                class="links"
+                style="
+                    margin-bottom: 20px;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                "
+            >
+                <div class="nav" style="display: flex; gap: 1.3rem">
+                    <a href="https://twitter.com/gd3kr" target="_blank"
+                        ><span>twitter</span></a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/aarya-%E2%A0%80-0099001b8/"
+                        target="_blank"
+                        ><span>linkedin</span></a
+                    >
+                    <a href="https://github.com/gd3kr" target="_blank"
+                        ><span>github</span></a
+                    >
+                    <a href="#"><span>0xaarya.eth</span></a>
+                    <a href="#"><span onclick="toggle()">toggle</span></a>
+                </div>
+            </div>
+
+            <script>
+                function toggle() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+
+                    // Toggle background image
+                    var bgImageElement = document.querySelector(".bg-image");
+                    var currentImage = bgImageElement.getAttribute("src");
+                    var newImage = currentImage.includes("light.png")
+                        ? "darker.png"
+                        : "light.png";
+                    bgImageElement.setAttribute("src", newImage);
+
+                    // Toggle noise background
+                    var noiseBgElement = document.querySelector(".noise-bg");
+                    noiseBgElement.classList.toggle("noise-bg");
+                }
+            </script>
+            <p style="font-family: 'Pixel Operator'">
+                Hey! I'm Aarya (@gd3kr on the internet). I fell in love with
+                computers when I was 11. Ever since, I’ve spent a lot of time
+                learning to talk to them.
+                <br /><br />
+                With practice, I've gotten pretty good at working with hardware,
+                everything from simple line-following bots to super fast racing
+                drones. In the last few years, however, I’ve doubled down on
+                software to solve problems that matter to me, with code. I like
+                to build things that create value, look beautiful and are
+                fundamentally fun to build and use.
+                <br />
+                <br />
+                Most recently, I graduated high school in May of 2022 and I've
+                taken a year off before university to study the topics I love —
+                Linear Algebra, Large Language Models, Computer Graphics and
+                Aviation
+
+                <br /><br />Besides building things, I like to read, make music,
+                create art and vibe to Kanye (although I do not reciprocate his
+                political beliefs)
+            </p>
+            <div class="interests">
+                <h2 class="expanding-title">Interests</h2>
+                <div class="expanding-content">
+                    <p>Your interests text goes here...</p>
+                </div>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const expandingTitle =
+                        document.querySelector(".expanding-title");
+                    const expandingContent =
+                        document.querySelector(".expanding-content");
+
+                    expandingTitle.addEventListener("click", function () {
+                        expandingContent.classList.toggle("expanded");
+                    });
+                });
+            </script>
+            <div class="projects">
+                <h2 style="font-weight: 700; padding-bottom: 10px">
+                    Some of my favourite projects
+                </h2>
+                <ul style="list-style: none">
+                    <li>
+                        <a
+                            href="https://ada.gd3.kr"
+                            target="_blank"
+                            style="text-decoration: none"
+                        >
+                            <span style="font-weight: 700; cursor: pointer"
+                                >Ada (November 2022)</span
+                            ></a
+                        >: An intelligent chatbot that answers all of grandma's
+                        technology questions and also doubles as an enthusiastic
+                        conversation buddy!
+                    </li>
+                    <li>
+                        <a
+                            href="https://autoregex.xyz"
+                            target="_blank"
+                            style="text-decoration: none"
+                            ><span style="font-weight: 700; cursor: pointer"
+                                >AutoRegex (June 2022)</span
+                            ></a
+                        >
+                        : Web app that uses Natural Language Processing to parse
+                        simple english into Regular Expressions and vice versa;
+                        also
+                        <a
+                            target="_blank"
+                            href="https://astralcodexten.substack.com/p/links-for-july-095"
+                            >Scott Alexander</a
+                        >,
+                        <a href="https://www.gwern.net/GPT-3" target="_blank"
+                            >Gwern</a
+                        >
+                        approved and certified
+                        <a
+                            target="_blank"
+                            href="https://twitter.com/gd3kr/status/1545370626273120256"
+                            >twitter</a
+                        >
+                        classic
+                    </li>
+
+                    <script>
+                        // custom hash function
+                    </script>
+                    <li>
+                        <a
+                            href="https://lunarpay.in"
+                            target="_blank"
+                            style="text-decoration: none"
+                        >
+                            <span style="font-weight: 700; cursor: pointer"
+                                >LunarPay (December 2021)</span
+                            ></a
+                        >: LunarPay was a web app that allowed vendors to accept
+                        payments in crypto in a few clicks. Also won 2nd place
+                        at
+                        <a
+                            href="https://devfolio.co/projects/lunarpay-crypto-payments-5815"
+                            target="_blank"
+                        >
+                            Polygon BUIDLIT</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://realsteer.aaryadoes.tech"
+                            target="_blank"
+                            style="text-decoration: none"
+                        >
+                            <span style="font-weight: 700; cursor: pointer"
+                                >Realsteer (July 2021)</span
+                            ></a
+                        >: Little summer project that uses sensors on the iPhone
+                        to emulate a racing wheel
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="contact"
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                "
+            >
+                <span>
+                    Shoot me a DM on
+                    <a href="https://twitter.com/gd3kr" target="_blank"
+                        >twitter</a
+                    >
+                    or an email at
+                    <span class="font-family:Arial !important"
+                        >aarya@gd3[dot]kr</span
+                    >
+                    if you wanna hang out, vibe together, or exchange ideas. I'm
+                    always down to chat!
+                </span>
+
+                <img
+                    id="anim"
+                    src="aaryanewest.webp"
+                    alt="Aarya's profile picture"
+                    style="width: 250px; margin-top: 20px"
+                />
+                <h3 style="font-weight: 400; margin-top: 10px; font-size: 18px">
+                    An approximation of my appearance thanks to
+                    <a
+                        href="https://huggingface.co/spaces/stabilityai/stable-diffusion"
+                        target="_blank"
+                        >Stable Diffusion</a
+                    >
+                </h3>
+            </div>
+        </div>
+        <script
+            data-goatcounter="https://gd3kr.goatcounter.com/count"
+            async
+            src="//gc.zgo.at/count.js"
+        ></script>
+    </body>
+    <!--write a script that pauses the image with id anim when mouse hover-->
+</html>

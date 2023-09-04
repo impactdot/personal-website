@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "Apple Garamond";
+    font-weight: 400;
+    src: url("./AppleGaramond.woff2");
+}
+
+@font-face {
+    font-family: "Basiic";
+    src: url("./basiic.ttf");
+}
+
+@font-face {
+    font-family: "Pixel Operator";
+    src: url(./pixel_operator/PixelOperator.ttf);
+}
+
+@font-face {
+    font-family: "Pixel Operator 8 Bold";
+    src: url(./pixel_operator/PixelOperator8-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Stiff Staff";
+    src: url(./StiffStaff/StiffStaff-Heavy.ttf);
+}
+
+@font-face {
+    font-family: "Apple Garamond";
+    font-weight: 700;
+    src: url("./AppleGaramond-Bold.woff2");
+}
+@font-face {
+    font-family: "Apple Garamond";
+    font-weight: 400;
+    font-style: italic;
+    src: url("./AppleGaramond-Italic.woff2");
+}
+
+.bleeding {
+    text-shadow: 0 0 0.05em rgba(0%, 0%, 100%, 0.35),
+        0 0 0.1em rgba(0%, 100%, 0%, 0.25), 0 0 0.2em rgba(100%, 10%, 10%, 0.45);
+    /* background-image: url("background.png"); */
+}
+
+.glider {
+    /* same shadow effects as bleeding but maintain transparency */
+    filter: drop-shadow(0 0 0.05em rgba(0%, 0%, 100%, 0.35))
+        drop-shadow(0 0 0.1em rgba(0%, 100%, 0%, 0.25))
+        drop-shadow(0 0 0.2em rgba(100%, 10%, 10%, 0.45));
+    /* translate up 10px */
+    transform: translateY(-15px);
+}
+
+a {
+    text-shadow: 0 0 0.05em rgba(0%, 0%, 100%, 0.5),
+        0 0 0.1em rgba(0%, 100%, 0%, 0.2), 0 0 0.2em rgba(100%, 10%, 10%, 0.2);
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    scale: 130%;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    /* move to the left */
+    transform: scaleX(-1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("light.png");
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Basiic", Arial, sans-serif;
+    /* background-image: url("background.png"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* before body image background */
+
+li {
+    padding-bottom: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.dark-mode {
+    /* background-color: rgb(4, 4, 4); */
+    /* background-image: url("background.png"); */
+    color: #fff !important;
+    /* remove webkit color transparent and make it white */
+    -webkit-text-fill-color: white;
+
+    /* make all links a brighter color */
+
+    text-shadow: none !important;
+}
+
+.dark-mode .title {
+    color: #fff !important;
+    text-decoration: none;
+    /* remove background */
+    background-image: none;
+    -webkit-text-fill-color: white;
+}
+
+/* make all links yellow in dark mode */
+.dark-mode a:visited {
+    color: #ffb900 !important;
+    text-decoration: none;
+    /* remove background */
+    background-image: none;
+    -webkit-text-fill-color: #ffb900;
+}
+
+.dark-mode .glider {
+    /* invert */
+    filter: invert(1);
+}
+
+.dark-mode a:link {
+    color: #ffb900 !important;
+    text-decoration: none;
+    /* remove background */
+    background-image: none;
+    -webkit-text-fill-color: #ffb900;
+}
+
+.noise-bg {
+    background-image: url("darker.png");
+    background-repeat: repeat;
+    background-size: 40%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* filter: invert(1); */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: start;
+    /* align-items: start; */
+    /* background-color: red; */
+    margin: auto;
+    padding: 20px 40px;
+    font-size: 1.35em;
+}
+
+.nav {
+    display: flex;
+    gap: 1.3rem;
+    font-family: "Pixel Operator", Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+p {
+    font-family: "Pixel Operator", Arial, sans-serif;
+}
+
+h2 {
+    font-family: "Pixel Operator 8 Bold", Arial;
+    letter-spacing: -0.1em;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 3em;
+    /* remove background image */
+    background-image: none;
+    -webkit-text-fill-color: black;
+    font-family: "Stiff Staff", Arial, sans-serif;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+    /* remove background */
+    background-image: none;
+    -webkit-text-fill-color: blue;
+}
+
+a:visited {
+    color: blue;
+    text-decoration: none;
+    /* remove background */
+    background-image: none;
+    -webkit-text-fill-color: blue;
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        width: 80vw;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main {
+        width: 100vw;
+        margin: auto;
+        padding: 15px;
+    }
+    .title {
+        font-size: 2.5em;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+}
+
+.expanding-title {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.expanding-content {
+    display: none;
+}
+
+.expanded {
+    display: block;
+}
