@@ -40,42 +40,26 @@
                 "
             >
                 <div class="nav" style="display: flex; gap: 1.3rem">
-                    <a href="https://twitter.com/gd3kr" target="_blank"
-                        ><span>twitter</span></a
-                    >
+                    <a href="https://twitter.com/0xzeroImpact" target="_blank">
+                        <u><span>twitter</span></u>
+                    </a>
                     <a
                         href="https://www.linkedin.com/in/danay-d-618132208/"
                         target="_blank"
-                        ><span>linkedin</span></a
                     >
-                    <a href="https://github.com/gd3kr" target="_blank"
-                        ><span>github</span></a
-                    >
+                        <u><span>linkedin</span></u>
+                    </a>
+                    <a href="https://github.com/impactdot" target="_blank">
+                        <u><span>github</span></u>
+                    </a>
                     <a href="#"><span>0xzeroImpact.eth</span></a>
-                    <a href="#"><span onclick="toggle()">toggle</span></a>
+                    <a href="#">
+                        <i><span onclick="toggle()">toggle</span></i>
+                    </a>
                 </div>
             </div>
-
-            <script>
-                function toggle() {
-                    var element = document.body;
-                    element.classList.toggle("dark-mode");
-
-                    // Toggle background image
-                    var bgImageElement = document.querySelector(".bg-image");
-                    var currentImage = bgImageElement.getAttribute("src");
-                    var newImage = currentImage.includes("light.png")
-                        ? "darker.png"
-                        : "light.png";
-                    bgImageElement.setAttribute("src", newImage);
-
-                    // Toggle noise background
-                    var noiseBgElement = document.querySelector(".noise-bg");
-                    noiseBgElement.classList.toggle("noise-bg");
-                }
-            </script>
             <p style="font-family: 'Pixel Operator'">
-                Hey! I'm Dan
+                Hey! I'm Dan, a 17 year old from Kazakhstan.
                 <br /><br />
                 With practice, I've gotten pretty good at working with hardware,
                 everything from simple line-following bots to super fast racing
@@ -95,28 +79,37 @@
                 political beliefs)
             </p>
             <div class="interests">
-                <h2 class="expanding-title">Interests</h2>
+                <h3 class="expanding-title">Interests</h3>
                 <div class="expanding-content">
-                    <p>Your interests text goes here...</p>
+                    <p>sports i play: tennis, golf, table tennis</p>
+                    <p>favorite book genre: fantasy</p>
+                    <p>
+                        favorite books: "The Night Watch" and its series by
+                        Sergei Lukianenko, "Bricks 2.0" (in Russian) by Daniyar
+                        Sugralinov,
+                    </p>
+                    <p>
+                        currently reading: "Kafka on the Shore" by Haruki
+                        Murakami
+                    </p>
                 </div>
             </div>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const expandingTitle =
-                        document.querySelector(".expanding-title");
-                    const expandingContent =
-                        document.querySelector(".expanding-content");
-
-                    expandingTitle.addEventListener("click", function () {
-                        expandingContent.classList.toggle("expanded");
-                    });
-                });
-            </script>
             <div class="projects">
                 <h2 style="font-weight: 700; padding-bottom: 10px">
                     Some of my favourite projects
                 </h2>
                 <ul style="list-style: none">
+                    <li>
+                        <a
+                            href="https://ada.gd3.kr"
+                            target="_blank"
+                            style="text-decoration: none"
+                        >
+                            <span style="font-weight: 700; cursor: pointer"
+                                >ENS Rental</span
+                            ></a
+                        >: asf
+                    </li>
                     <li>
                         <a
                             href="https://ada.gd3.kr"
@@ -156,10 +149,6 @@
                         >
                         classic
                     </li>
-
-                    <script>
-                        // custom hash function
-                    </script>
                     <li>
                         <a
                             href="https://lunarpay.in"
@@ -204,19 +193,6 @@
                     margin-top: 20px;
                 "
             >
-                <span style="font-family: Pixel Operator">
-                    Shoot me a DM on
-                    <a href="https://twitter.com/gd3kr" target="_blank"
-                        >twitter</a
-                    >
-                    or an email at
-                    <span class="font-family:Arial !important"
-                        >aarya@gd3[dot]kr</span
-                    >
-                    if you wanna hang out, vibe together, or exchange ideas. I'm
-                    always down to chat!
-                </span>
-
                 <img
                     id="anim"
                     src="aaryanewest.webp"
@@ -233,11 +209,6 @@
                 </h3>
             </div>
         </div>
-        <script
-            data-goatcounter="https://gd3kr.goatcounter.com/count"
-            async
-            src="//gc.zgo.at/count.js"
-        ></script>
+        <script src="./scripts.js"></script>
     </body>
-    <!--write a script that pauses the image with id anim when mouse hover-->
 </html>
