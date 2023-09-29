@@ -9,7 +9,12 @@ function toggle() {
         ? "darker.png"
         : "light.png";
     bgImageElement.setAttribute("src", newImage);
-
+    const darkLightBtn = document.querySelector('span[onclick="toggle()"]');
+    if (document.body.classList.contains("dark-mode")) {
+        darkLightBtn.classList.add("dark-mode-button");
+    } else {
+        darkLightBtn.classList.remove("dark-mode-button");
+    }
     // Toggle noise background
     var noiseBgElement = document.querySelector(".noise-bg");
     noiseBgElement.classList.toggle("noise-bg");
@@ -21,5 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     expandingTitle.addEventListener("click", function () {
         expandingContent.classList.toggle("expanded");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", event => {
+    let titles = document.querySelectorAll(".expanding-title");
+    titles.forEach(title => {
+        title.addEventListener("click", function () {
+            let content = this.nextElementSibling;
+            let currentStyle = window.getComputedStyle(content).display;
+
+            // If the content is currently displayed...
+            if (currentStyle === "block") {
+                // ...hide it.
+                content.style.display = "none";
+            } else {
+                // Otherwise, display it.
+                content.style.display = "block";
+            }
+        });
     });
 });

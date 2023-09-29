@@ -64,7 +64,6 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     scale: 130%;
     mix-blend-mode: multiply;
     opacity: 0.9;
@@ -206,6 +205,12 @@ a:visited {
     -webkit-text-fill-color: blue;
 }
 
+@media screen and (min-width: 1200px) {
+    .main {
+        width: 60vw; /* or whatever width you prefer */
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .main {
         width: 80vw;
@@ -230,17 +235,21 @@ a:visited {
 
 .expanding-title {
     cursor: pointer;
-    color: blue;
+    /* color: blue; */
     text-decoration: underline;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     font-weight: bold;
     padding-bottom: 10px;
 }
 
 .expanding-content {
-    display: none;
+    display: block;
 }
 
 .expanded {
     display: block;
+}
+
+.dark-mode-button {
+    border-color: white !important;
 }

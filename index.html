@@ -26,7 +26,17 @@
                 "
             >
                 <h1 class="title">Dan's Website</h1>
-                <img src="pfp.jpg" height="33px" width="33px" class="glider" />
+                <!-- <img src="pfp.jpg" height="33px" width="33px" class="glider" /> -->
+                <span
+                    class="dark-mode-button"
+                    onclick="toggle()"
+                    style="
+                        cursor: pointer;
+                        padding: 5px;
+                        border: 1px solid #000;
+                    "
+                    >dark/light</span
+                >
             </div>
             <!--add an image-->
 
@@ -49,138 +59,215 @@
                     >
                         <u><span>linkedin</span></u>
                     </a>
+                    <a
+                        href="https://www.linkedin.com/in/danay-d-618132208/"
+                        target="_blank"
+                    >
+                        <u><span>CV</span></u>
+                    </a>
                     <a href="https://github.com/impactdot" target="_blank">
                         <u><span>github</span></u>
                     </a>
-                    <a href="#"><span>0xzeroImpact.eth</span></a>
-                    <a href="#">
-                        <i><span onclick="toggle()">toggle</span></i>
+                    <a href="https://app.ens.domains/0xzeroimpact.eth">
+                        <u><span>0xzeroImpact.eth</span></u>
                     </a>
+                    <!-- <a href="#">
+                        <i><span onclick="toggle()">toggle</span></i>
+                    </a> -->
                 </div>
             </div>
-            <p style="font-family: 'Pixel Operator'">
-                Hey! I'm Dan, a 17 year old from Kazakhstan.
-                <br /><br />
-                With practice, I've gotten pretty good at working with hardware,
-                everything from simple line-following bots to super fast racing
-                drones. In the last few years, however, I’ve doubled down on
-                software to solve problems that matter to me, with code. I like
-                to build things that create value, look beautiful and are
-                fundamentally fun to build and use.
-                <br />
-                <br />
-                Most recently, I graduated high school in May of 2022 and I've
-                taken a year off before university to study the topics I love —
-                Linear Algebra, Large Language Models, Computer Graphics and
-                Aviation
+            <h2 class="expanding-title">About me</h2>
+            <div class="expanding-content" style="padding-bottom: 8px">
+                <p style="font-family: 'Pixel Operator'">
+                    Hey! I'm Dan, a 17 year old from Kazakhstan.
+                    <br /><br />
+                    With practice, I've gotten pretty good at working with
+                    hardware, everything from simple line-following bots to
+                    super fast racing drones. In the last few years, however,
+                    I’ve doubled down on software to solve problems that matter
+                    to me, with code. I like to build things that create value,
+                    look beautiful and are fundamentally fun to build and use.
+                    <br />
+                    <br />
+                    Most recently, I graduated high school in May of 2022 and
+                    I've taken a year off before university to study the topics
+                    I love — Linear Algebra, Large Language Models, Computer
+                    Graphics and Aviation
 
-                <br /><br />Besides building things, I like to read, make music,
-                create art and vibe to Kanye (although I do not reciprocate his
-                political beliefs)
-            </p>
-            <div class="interests">
-                <h3 class="expanding-title">Interests</h3>
+                    <br /><br />Besides building things, I like to read, make
+                    music, create art and vibe to Kanye (although I do not
+                    reciprocate his political beliefs) Here is my
+                    <a href="https://dev.to/impactdot">blog</a>
+                </p>
+                <div class="interests">
+                    <h3 class="expanding-title" style="padding-bottom: 0px"
+                        >Interests</h3
+                    >
+                    <div class="expanding-content">
+                        <p>sports i play: tennis, golf, table tennis</p>
+                        <p>favorite book genre: fantasy</p>
+                        <p>
+                            favorite books: "The Night Watch" and its series by
+                            Sergei Lukianenko, "Bricks 2.0" (in Russian) by
+                            Daniyar Sugralinov,
+                        </p>
+                        <p>
+                            currently reading: "Kafka on the Shore" by Haruki
+                            Murakami
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="awards">
+                <h2
+                    class="expanding-title"
+                    style="font-weight: 700; padding-bottom: 10px"
+                >
+                    Certificates/Awards
+                </h2>
                 <div class="expanding-content">
-                    <p>sports i play: tennis, golf, table tennis</p>
-                    <p>favorite book genre: fantasy</p>
-                    <p>
-                        favorite books: "The Night Watch" and its series by
-                        Sergei Lukianenko, "Bricks 2.0" (in Russian) by Daniyar
-                        Sugralinov,
-                    </p>
-                    <p>
-                        currently reading: "Kafka on the Shore" by Haruki
-                        Murakami
-                    </p>
+                    <ul style="list-style: none">
+                        <li>
+                            <a
+                                href="https://ada.gd3.kr"
+                                target="_blank"
+                                style="text-decoration: none"
+                            >
+                                <span style="font-weight: 700; cursor: pointer"
+                                    >British Mathematical Olympiad 1</span
+                                ></a
+                            >: asf
+                        </li>
+                        <li>
+                            <a
+                                href="https://ada.gd3.kr"
+                                target="_blank"
+                                style="text-decoration: none"
+                            >
+                                <span style="font-weight: 700; cursor: pointer"
+                                    >National Mathemetical Olympiad</span
+                                ></a
+                            >: asf
+                        </li>
+                        <li>
+                            <a
+                                href="https://ada.gd3.kr"
+                                target="_blank"
+                                style="text-decoration: none"
+                            >
+                                <span style="font-weight: 700; cursor: pointer"
+                                    >AMC 8/10</span
+                                ></a
+                            >: asf
+                        </li>
+                        <li>
+                            <a
+                                href="https://ada.gd3.kr"
+                                target="_blank"
+                                style="text-decoration: none"
+                            >
+                                <span style="font-weight: 700; cursor: pointer"
+                                    >AMC 10</span
+                                ></a
+                            >: asf
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="projects">
-                <h2 style="font-weight: 700; padding-bottom: 10px">
+                <h2
+                    class="expanding-title"
+                    style="font-weight: 700; padding-bottom: 10px"
+                >
                     Some of my favourite projects
                 </h2>
-                <ul style="list-style: none">
-                    <li>
-                        <a
-                            href="https://ada.gd3.kr"
-                            target="_blank"
-                            style="text-decoration: none"
-                        >
-                            <span style="font-weight: 700; cursor: pointer"
-                                >ENS Rental</span
-                            ></a
-                        >: asf
-                    </li>
-                    <li>
-                        <a
-                            href="https://ada.gd3.kr"
-                            target="_blank"
-                            style="text-decoration: none"
-                        >
-                            <span style="font-weight: 700; cursor: pointer"
-                                >Magic Meal Generator (November 2022)</span
-                            ></a
-                        >: asf
-                    </li>
-                    <li>
-                        <a
-                            href="https://autoregex.xyz"
-                            target="_blank"
-                            style="text-decoration: none"
-                            ><span style="font-weight: 700; cursor: pointer"
-                                >Magic Email Assistant (June 2022)</span
-                            ></a
-                        >
-                        : Web app that uses Natural Language Processing to parse
-                        simple english into Regular Expressions and vice versa;
-                        also
-                        <a
-                            target="_blank"
-                            href="https://astralcodexten.substack.com/p/links-for-july-095"
-                            >Scott Alexander</a
-                        >,
-                        <a href="https://www.gwern.net/GPT-3" target="_blank"
-                            >Gwern</a
-                        >
-                        approved and certified
-                        <a
-                            target="_blank"
-                            href="https://twitter.com/gd3kr/status/1545370626273120256"
-                            >twitter</a
-                        >
-                        classic
-                    </li>
-                    <li>
-                        <a
-                            href="https://lunarpay.in"
-                            target="_blank"
-                            style="text-decoration: none"
-                        >
-                            <span style="font-weight: 700; cursor: pointer"
-                                >LunarPay (December 2021)</span
-                            ></a
-                        >: LunarPay was a web app that allowed vendors to accept
-                        payments in crypto in a few clicks. Also won 2nd place
-                        at
-                        <a
-                            href="https://devfolio.co/projects/lunarpay-crypto-payments-5815"
-                            target="_blank"
-                        >
-                            Polygon BUIDLIT</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://realsteer.aaryadoes.tech"
-                            target="_blank"
-                            style="text-decoration: none"
-                        >
-                            <span style="font-weight: 700; cursor: pointer"
-                                >Realsteer (July 2021)</span
-                            ></a
-                        >: Little summer project that uses sensors on the iPhone
-                        to emulate a racing wheel
-                    </li>
-                </ul>
+                <div class="expanding-content">
+                    <ul style="list-style: none">
+                        <li>
+                            <a
+                                href="https://ada.gd3.kr"
+                                target="_blank"
+                                style="text-decoration: none"
+                            >
+                                <span style="font-weight: 700; cursor: pointer"
+                                    >ENS Rental</span
+                                ></a
+                            >: asf
+                        </li>
+                        <li>
+                            <a
+                                href="https://ada.gd3.kr"
+                                target="_blank"
+                                style="text-decoration: none"
+                            >
+                                <span style="font-weight: 700; cursor: pointer"
+                                    >Magic Meal Generator (November 2022)</span
+                                ></a
+                            >: asf
+                        </li>
+                        <li>
+                            <a
+                                href="https://autoregex.xyz"
+                                target="_blank"
+                                style="text-decoration: none"
+                                ><span style="font-weight: 700; cursor: pointer"
+                                    >Magic Email Assistant (June 2022)</span
+                                ></a
+                            >
+                            : Web app that uses Natural Language Processing to
+                            parse simple english into Regular Expressions and
+                            vice versa; also
+                            <a
+                                target="_blank"
+                                href="https://astralcodexten.substack.com/p/links-for-july-095"
+                                >Scott Alexander</a
+                            >,
+                            <a
+                                href="https://www.gwern.net/GPT-3"
+                                target="_blank"
+                                >Gwern</a
+                            >
+                            approved and certified
+                            <a
+                                target="_blank"
+                                href="https://twitter.com/gd3kr/status/1545370626273120256"
+                                >twitter</a
+                            >
+                            classic
+                        </li>
+                        <li>
+                            <a
+                                href="https://lunarpay.in"
+                                target="_blank"
+                                style="text-decoration: none"
+                            >
+                                <span style="font-weight: 700; cursor: pointer"
+                                    >Admitted (December 2021)</span
+                                ></a
+                            >: LunarPay was a web app that allowed vendors to
+                            accept payments in crypto in a few clicks. Also won
+                            2nd place at
+                            <a
+                                href="https://devfolio.co/projects/lunarpay-crypto-payments-5815"
+                                target="_blank"
+                            >
+                                Polygon BUIDLIT</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://realsteer.aaryadoes.tech"
+                                target="_blank"
+                                style="text-decoration: none"
+                            >
+                                <span style="font-weight: 700; cursor: pointer"
+                                    >Realsteer (July 2021)</span
+                                ></a
+                            >: Little summer project that uses sensors on the
+                            iPhone to emulate a racing wheel
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div
                 class="contact"
